@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipboard Sharing Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Correct path -->
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Share Text</h2>
+            <div class="input-field">
+                <label for="shared-text">Enter text to share</label>
+                <textarea id="shared-text"></textarea>
+            </div>
+            <button id="share-btn" class="button">Share</button>
+            <span id="otp-display"></span>
+        </div>
+
+        <div>
+            <h2>Verify OTP</h2>
+            <div class="input-field">
+                <label for="otp-input">Enter OTP:</label>
+                <input type="text" id="otp-input" />
+            </div>
+            <button id="verify-otp-btn" class="button">Verify OTP</button>
+        </div>
+
+        <div>
+            <h2>Received Text</h2>
+            <div id="received-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

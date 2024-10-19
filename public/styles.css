@@ -1,0 +1,134 @@
+@font-face {
+    font-family: font1;
+    src: url(NewAmsterdam-Regular.ttf);
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: font1, sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background-image: url('/images/bg2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 100vh;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #FFF8DC;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFF8DC;
+}
+
+#shared-text, #otp-input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFF8DC;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#shared-text {
+    height: 15vh;
+    resize: none;
+}
+
+#otp-input {
+    height: 40px;
+}
+
+#received-text {
+    height: 20vh;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-y: auto;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: white;
+    border: 2px solid #FFF8DC;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#otp-display {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFF8DC;
+    
+    border: 2px solid #FFF8DC;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-height: 600px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #shared-text {
+        height: 10vh;
+    }
+
+    #received-text {
+        height: 15vh;
+    }
+}
